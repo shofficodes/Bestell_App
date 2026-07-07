@@ -1,0 +1,10 @@
+@media screen and (min-width: 1440px) {
+    * {
+        margin: 0px;
+    }
+
+    .innerWidth {
+        padding-left: max(calc(50% - 720px), 0px);
+        padding-right: max(calc(50% - 720px), 0px);
+    }
+}
