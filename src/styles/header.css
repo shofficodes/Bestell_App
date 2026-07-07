@@ -1,0 +1,31 @@
+/* Header */
+/* --------------------------------------------------- */
+.headerBurgerMenu{
+    height: 60px;
+    width: 60px;
+    background-color: #E76C1F;
+}
+
+.headerLogo{
+    height: 38px;
+    width: 92px;
+    margin-left: 120px;
+}
+
+nav {
+    background-color: #E76C1F;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 128px;
+}
+nav > button{
+    background-color: #E76C1F;
+    border: none;
+    margin-right: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* --------------------------------------------------- */

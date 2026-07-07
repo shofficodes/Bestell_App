@@ -1,26 +1,124 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bestell App</title>
     <link rel="shortcut icon" href="./assets/icons/Logo 01.svg" type="image/x-icon">
 
+    <link rel="stylesheet" href="./src/styles/fonts.css">
     <link rel="stylesheet" href="./src/styles/standart.css">
     <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/header.css">
     <link rel="stylesheet" href="./src/styles/responsive.css">
 
     <script src="./src/scripts/script.js"></script>
+    <script src="./src/scripts/db.js"></script>
 </head>
+
 <body>
     <header>
         <nav class="innerWidth">
             <img class="headerLogo" src="./assets/icons/Logo 02.svg" alt="logo_img">
-            <button><img class="headerBurgerMenu" src="./assets/icons/burger_menu_icon.svg" alt="burger_menu_icon"></button>
+            <button><img class="headerBurgerMenu" src="./assets/icons/burger_menu_icon.svg"
+                    alt="burger_menu_icon"></button>
         </nav>
     </header>
 
     <main>
+        <header class="restaurantInfo innerWidth">
+            <div class="heroFrame">
+                <img class="hero" src="./assets/imgs/burger_house_hero.png" alt="restaurant_info_background_img">
+            </div>
+            <img class="restaurantLogo" src="./assets/icons/burger_house_logo.png" alt="burger_house_logo_img">
+            <div class="restaurantTitle">
+                <h1><span class="titleHighlight">Burger</span> House</h1>
+                <h2>The best of Burgers, Pizza, and Greens, all in one great place.</h2>
+            </div>
+        </header>
+
+        <div class="stickyWrapper innerWidth">
+            <section class="dishCategory">
+                <div class="bannerWrapper">
+                    <header class="catBanner">
+                        <img class="catIcon" src="./assets/icons/Cat_Burger.png" alt="burger_icon">
+                        <div class="catTitleWrapper">
+                            <h2 class="catTitle">Burger & Sandwiches</h2>
+                        </div>
+                    </header>
+                    <div class="bannerBackground"></div>
+                </div>
+
+                <section class="dishes">
+                    <div class="dish">
+                        <img src="./assets/imgs/dishes/burgerAndSandwiches/veggie_mushrum_img.png"
+                            alt="veggie_mushroom_img">
+                        <div class="dishTextWrapper">
+                            <div class="dishText">
+                                <h3>Veggie mushroom black burger</h3>
+                                <h4>Mixed green salad, Tomatoes, Edamame, Mushrooms</h4>
+                            </div>
+                            <div class="dishInteraction">
+                                <p>Price</p>
+                                <button>Add to basket</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dish">
+                        <img src="./assets/imgs/dishes/burgerAndSandwiches/all_meat_burger_img.png"
+                            alt="all_meat_burger_img">
+                        <div class="dishTextWrapper">
+                            <div class="dishText">
+                                <h3>All meat burger</h3>
+                                <h4>Beef, Bacon, Dill pickles, Smoked cheese, Ketchup, BBQ souse</h4>
+                            </div>
+                            <div class="dishInteraction">
+                                <p>Price</p>
+                                <button>Add to basket</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dish">
+                        <img src="./assets/imgs/dishes/burgerAndSandwiches/beef_red_burger_img.png"
+                            alt="beef_red_burger_img">
+                        <div class="dishTextWrapper">
+                            <div class="dishText">
+                                <h3>Beef red burger</h3>
+                                <h4>Beef, Cheese, Tomatoes, Lettuce, Onion</h4>
+                            </div>
+                            <div class="dishInteraction">
+                                <p>Price</p>
+                                <button>Add to basket</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dish">
+                        <img src="./assets/imgs/dishes/burgerAndSandwiches/blg_chicken_burger_img.png"
+                            alt="big_chicken_burger_img">
+                        <div class="dishTextWrapper">
+                            <div class="dishText">
+                                <h3>Big chicken burger</h3>
+                                <h4>Chicken, Cheese, Tomatoes, Lettuce, Onion, Bell pepper, </h4>
+                            </div>
+                            <div class="dishInteraction">
+                                <p>Price</p>
+                                <button>Add to basket</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+
+            <div class="basket">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo commodi dignissimos eos tempora
+                    quibusdam architecto nam cupiditate asperiores quas. Ipsa qui maiores sequi? Quam mollitia magnam
+                    accusantium? Minus, numquam temporibus?</p>
+            </div>
+
+        </div>
+
 
     </main>
 
@@ -28,4 +126,5 @@
 
     </footer>
 </body>
+
 </html>

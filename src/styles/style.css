@@ -1,28 +1,175 @@
-.headerBurgerMenu{
-    height: 60px;
-    width: 60px;
-    background-color: #E76C1F;
+/* Restaurant Info: */
+/* ------------------------------------------ */
+.restaurantInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.headerLogo{
-    height: 38px;
-    width: 92px;
-    margin-left: 120px;
+.hero {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: bottom center;
 }
 
-nav {
-    background-color: #E76C1F;
-    display: flex; 
-    justify-content: space-between;
+.heroFrame {
+    height: 440px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.restaurantLogo {
+    width: 200px;
+    height: 200px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 440px;
+}
+
+.restaurantTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
-    min-height: 128px;
+    margin-top: 80px;
 }
-nav > button{
+
+.titleHighlight {
+    color: #E76C1F;
+}
+
+.restaurantInfo h1 {
+    font-family: "PalanquinDark-Regular";
+    font-weight: 700;
+    font-style: bold;
+    font-size: 48px;
+}
+
+.restaurantInfo h2 {
+    font-family: "PalanquinDark-Regular";
+    font-weight: 700;
+    font-style: bold;
+    font-size: 24px;
+}
+/* ------------------------------------------ */
+
+
+
+/* Category with Dishes: */
+/* ------------------------------------------ */
+.catBanner{
+    height: 60px;
+    position: relative;
+}
+.catIcon{
+    width: 81px;
+    height: 91px;
+
+    position: absolute;
+    bottom: -4px;
+    left: 167px;
+}
+.catTitle{
+    font-family: "Palanquin-Bold";
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    padding: 0;
+    margin-left: 283px;
+}
+.catTitleWrapper{
     background-color: #E76C1F;
-    border: none;
-    margin-right: 32px;
+    width: 100%;
+    height: 60px;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
+.bannerWrapper{
+    position: relative;
+}
+.bannerBackground{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #E76C1F;
+    z-index: -1;
+    margin-left: calc((100vw - 1440px) * -1);
+    width: calc(100vw + calc((100vw - 1440px) / 2));
+}
+/* ------------------------------------------ */
+
+
+
+/* Sticky Wrapper: */
+/* ------------------------------------------ */
+.stickyWrapper{
+    display: flex; 
+    justify-content: space-between;
+    min-height: 100dvh;
+    gap: 36px;
+
+    margin-top: 64px;
+}
+/* ------------------------------------------ */
+
+
+
+/* Basket: */
+/* ------------------------------------------ */
+.basket{
+    width: 435px;
+    height: 800px;
+    background-color: #363534;
+    
+    position: sticky;
+    top: 0px;
+
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+}
+
+/* ------------------------------------------ */
+
+/* Dish: */
+/* ------------------------------------------ */
+.dishes{
+    width: calc(100% -435px);
+    margin-top: 16px;
+    margin-left: 120px;
+}
+.dish{
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-top: 16px;
+    width: 720px;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: #FDEADC;
+}
+.dish > img{
+    width: 200px; 
+    height: 120px;
+    border-radius: 12px;
+    
+}
+.dishTextWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 8px;
+}
+
+/* ------------------------------------------ */

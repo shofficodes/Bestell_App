@@ -1,0 +1,1 @@
+- die comments von header.css sind darin, weil ich die Datei erst nach dem styling erstellt hatte, vorher war alles in der style.css und deshalb sind noch die comments drin. 
