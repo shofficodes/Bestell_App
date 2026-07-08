@@ -224,3 +224,27 @@
 }
 
 /* ------------------------------------------ */
+
+
+
+/* Footer: */
+/* ------------------------------------------ */
+.pageFooter{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #E76C1F;
+    height: 128px;
+    width: 100%;
+    margin-top: 128px;
+    gap: 72px;
+}
+footer > a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ------------------------------------------ */
