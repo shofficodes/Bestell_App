@@ -14,10 +14,11 @@
     <link rel="stylesheet" href="./src/styles/responsive.css">
 
     <script src="./src/scripts/script.js"></script>
+    <script src="./src/scripts/templates.js"></script>
     <script src="./src/scripts/db.js"></script>
 </head>
 
-<body>
+<body onload="init()">
     <header>
         <nav class="innerWidth">
             <img class="headerLogo" src="./assets/icons/Logo 02.svg" alt="logo_img">
@@ -39,75 +40,9 @@
         </header>
 
         <div class="stickyWrapper innerWidth">
-            <section class="dishCategory">
-                <div class="bannerWrapper">
-                    <header class="catBanner">
-                        <img class="catIcon" src="./assets/icons/Cat_Burger.png" alt="burger_icon">
-                        <div class="catTitleWrapper">
-                            <h2 class="catTitle">Burger & Sandwiches</h2>
-                        </div>
-                    </header>
-                    <div class="bannerBackground"></div>
-                </div>
+            <section id="dishCategory" class="dishCategory">
 
-                <section class="dishes">
-                    <div class="dish">
-                        <img src="./assets/imgs/dishes/burgerAndSandwiches/veggie_mushrum_img.png"
-                            alt="veggie_mushroom_img">
-                        <div class="dishTextWrapper">
-                            <div class="dishText">
-                                <h3>Veggie mushroom black burger</h3>
-                                <h4>Mixed green salad, Tomatoes, Edamame, Mushrooms</h4>
-                            </div>
-                            <div class="dishInteraction">
-                                <p>Price</p>
-                                <button>Add to basket</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dish">
-                        <img src="./assets/imgs/dishes/burgerAndSandwiches/all_meat_burger_img.png"
-                            alt="all_meat_burger_img">
-                        <div class="dishTextWrapper">
-                            <div class="dishText">
-                                <h3>All meat burger</h3>
-                                <h4>Beef, Bacon, Dill pickles, Smoked cheese, Ketchup, BBQ souse</h4>
-                            </div>
-                            <div class="dishInteraction">
-                                <p>Price</p>
-                                <button>Add to basket</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dish">
-                        <img src="./assets/imgs/dishes/burgerAndSandwiches/beef_red_burger_img.png"
-                            alt="beef_red_burger_img">
-                        <div class="dishTextWrapper">
-                            <div class="dishText">
-                                <h3>Beef red burger</h3>
-                                <h4>Beef, Cheese, Tomatoes, Lettuce, Onion</h4>
-                            </div>
-                            <div class="dishInteraction">
-                                <p>Price</p>
-                                <button>Add to basket</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dish">
-                        <img src="./assets/imgs/dishes/burgerAndSandwiches/blg_chicken_burger_img.png"
-                            alt="big_chicken_burger_img">
-                        <div class="dishTextWrapper">
-                            <div class="dishText">
-                                <h3>Big chicken burger</h3>
-                                <h4>Chicken, Cheese, Tomatoes, Lettuce, Onion, Bell pepper, </h4>
-                            </div>
-                            <div class="dishInteraction">
-                                <p>Price</p>
-                                <button>Add to basket</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+            </section>
 
             </section>
 
