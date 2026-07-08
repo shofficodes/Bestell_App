@@ -5,6 +5,12 @@
     font-style: normal;
 }
 @font-face {
+    font-family: "Palanquin-SemiBold";
+    src: url("../../assets/fonts/Palanquin/Palanquin-SemiBold.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face {
     font-family: "Palanquin-Bold";
     src: url("../../assets/fonts/Palanquin/Palanquin-Bold.ttf") format("truetype");
     font-weight: 100 900;

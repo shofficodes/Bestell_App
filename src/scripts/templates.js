@@ -27,8 +27,8 @@ function dishesTemplate(dishIndex){
                                 <h4>${burgerHouseDishes[dishIndex].describtion}</h4>
                             </div>
                             <div class="dishInteraction">
-                                <p>${burgerHouseDishes[dishIndex].price}€</p>
-                                <button>${getDishButton(dishIndex)}</button>
+                                <p>${formatPrice(burgerHouseDishes[dishIndex].price)}</p>
+                                ${getDishButton(dishIndex)}
                             </div>
                         </div>
         </div>

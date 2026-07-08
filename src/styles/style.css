@@ -173,7 +173,54 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    height: 120px;
     padding: 0px 8px;
+}
+.dishInteraction{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.addBtn{
+    height: 30px;
+    width: 115px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 16px;
+    background-color: #FFFFFF;
+
+    font-family: "Palanquin-Regular";
+    font-weight: 600;
+    font-size: 16px;
+}
+.addedBtn{
+    height: 30px;
+    width: 75px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 16px;
+    background-color: #FFFFFF;
+    color: #E76C1F;
+
+    font-family: "Palanquin-Regular";
+    font-weight: 600;
+    font-size: 16px;
+}
+.dishInteraction > p{
+    font-family: "Palanquin-Regular";
+    font-size: 24px;
+}
+.dishText > h3{
+    font-family: "Palanquin-SemiBold";
+    font-size: 24px;
+    font-weight: 600;
+}
+.dishText > h4{
+    line-height: 1.2;
+    font-family: "Palanquin-Regular";
+    font-size: 16px;
+    font-weight: 500;
 }
 
 /* ------------------------------------------ */

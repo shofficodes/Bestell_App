@@ -14,12 +14,12 @@ function renderDishes(){
 function getDishButton(dishIndex){
     if(burgerHouseDishes[dishIndex].amount == 0){
         return `
-            <buttom class="addBtn">Add to basket</buttom>
+            <button class="addBtn" onclick="addToBasket()">Add to basket</button>
         `
     }
     else if (burgerHouseDishes[dishIndex].amount > 0){
         return `
-            <buttom class="addedBtn">Added ${burgerHouseDishes[dishIndex].amount}</buttom>
+            <button class="addedBtn" onclick="addToBasket()">Added ${burgerHouseDishes[dishIndex].amount}</button>
         `
     }
 }
@@ -36,4 +36,18 @@ function getCategoryDishes(cat){
 
 function checkSubtitle(i){
     return burgerHouseCategories[i].subtitle != "" ? burgerHouseCategories[i].subtitle : "";
+}
+
+function formatPrice(amount) {
+    return new Intl.NumberFormat("de-DE", {
+        style: "currency",
+        currency: "EUR",
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+    }).format(amount);
+}
+
+function addToBasket(){
+    // add +1 amount
+    // re-render
 }

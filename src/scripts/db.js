@@ -25,7 +25,7 @@ let burgerHouseDishes = [
         "describtion" : "Mixed green salad, Tomatoes, Edamame, Mushrooms",
         "price" : 16.90,
         "category" : "burger_and_sandwiches",
-        "amount" : 0,
+        "amount" : 1,
         "img_path" : "./assets/imgs/dishes/burgerAndSandwiches/veggie_mushrum_img.png",
         "img_alt" : "veggie_mushroom_black_burger_img"
     },
@@ -61,7 +61,7 @@ let burgerHouseDishes = [
         "describtion" : "Tomato Sauce, Mozzarella",
         "price" : 11.90,
         "category" : "pizza",
-        "amount" : 0,
+        "amount" : 1,
         "img_path" : "./assets/imgs/dishes/pizza/pizza_margherita_img.png",
         "img_alt" : "pizza_margherita_img"
     },
@@ -106,7 +106,7 @@ let burgerHouseDishes = [
         "describtion" : "Green salad, Cucumber, Carrots, Parsley, Radishes ",
         "price" : 7.90,
         "category" : "salad",
-        "amount" : 0,
+        "amount" : 1,
         "img_path" : "./assets/imgs/dishes/salad/mini_green_salad_img.png",
         "img_alt" : "mini_green_salad_img"
     },
