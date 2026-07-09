@@ -35,3 +35,16 @@ function dishesTemplate(dishIndex){
     `
 }
 
+function basketTemplate(i){
+    return `
+        <div class="addedDish">
+            <p>${burgerHouseDishes[i].amount} x ${burgerHouseDishes[i].name}</p>
+            <div class="rowWrapper">
+                <div class="addRemoveBtn">
+                    <button onclick="reduceAmount(${i})"><img src="./assets/icons/buttons/delete.svg" alt="delete_icon"></button> ${burgerHouseDishes[i].amount} <button onclick="addAmount(${i})">+</button>
+                </div>
+                <p>${formatPrice(burgerHouseDishes[i].price)}</p>
+            </div>
+        </div>
+    `
+}

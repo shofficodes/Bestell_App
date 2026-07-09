@@ -25,7 +25,7 @@ let burgerHouseDishes = [
         "describtion" : "Mixed green salad, Tomatoes, Edamame, Mushrooms",
         "price" : 16.90,
         "category" : "burger_and_sandwiches",
-        "amount" : 1,
+        "amount" : 2,
         "img_path" : "./assets/imgs/dishes/burgerAndSandwiches/veggie_mushrum_img.png",
         "img_alt" : "veggie_mushroom_black_burger_img"
     },
