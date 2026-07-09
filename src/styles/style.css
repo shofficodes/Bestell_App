@@ -58,17 +58,19 @@
     font-style: bold;
     font-size: 24px;
 }
+
 /* ------------------------------------------ */
 
 
 
 /* Category with Dishes: */
 /* ------------------------------------------ */
-.catBanner{
+.catBanner {
     height: 60px;
     position: relative;
 }
-.catIcon{
+
+.catIcon {
     width: 81px;
     height: 91px;
 
@@ -76,7 +78,8 @@
     bottom: -4px;
     left: 167px;
 }
-.catTitle{
+
+.catTitle {
     font-family: "Palanquin-Bold";
     font-size: 40px;
     font-weight: 700;
@@ -85,7 +88,8 @@
     padding: 0;
     margin-left: 283px;
 }
-.catTitleWrapper{
+
+.catTitleWrapper {
     background-color: #E76C1F;
     width: 100%;
     height: 60px;
@@ -94,10 +98,11 @@
     margin-top: 64px;
 }
 
-.bannerWrapper{
+.bannerWrapper {
     position: relative;
 }
-.bannerBackground{
+
+.bannerBackground {
     position: absolute;
     width: 100vw;
     height: 100%;
@@ -108,51 +113,36 @@
     margin-left: calc((100vw - 1440px) * -1);
     width: calc(100vw + calc((100vw - 1440px) / 2));
 }
+
 /* ------------------------------------------ */
 
 
 
 /* Sticky Wrapper: */
 /* ------------------------------------------ */
-.stickyWrapper{
-    display: flex; 
+.stickyWrapper {
+    display: flex;
     justify-content: space-between;
     min-height: fit-content;
     gap: 36px;
 
     margin-top: 64px;
 }
-/* ------------------------------------------ */
-
-
-
-/* Basket: */
-/* ------------------------------------------ */
-.basket{
-    width: 435px;
-    height: 800px;
-    background-color: #363534;
-    
-    position: sticky;
-    top: 0px;
-    margin-top: 64px;
-
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-
-}
 
 /* ------------------------------------------ */
+
+
 
 /* Dish: */
 /* ------------------------------------------ */
-.dishes{
+.dishes {
     width: calc(100% -435px);
     margin-top: 32px;
     margin-left: 120px;
 }
-.dish{
-    display: flex; 
+
+.dish {
+    display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
@@ -163,26 +153,30 @@
     border-radius: 12px;
     background-color: #FDEADC;
 }
-.dish > img{
-    width: 200px; 
+
+.dish>img {
+    width: 200px;
     height: 120px;
     border-radius: 12px;
-    
+
 }
-.dishTextWrapper{
+
+.dishTextWrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 120px;
     padding: 0px 8px;
 }
-.dishInteraction{
+
+.dishInteraction {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
 }
-.addBtn{
+
+.addBtn {
     height: 30px;
     width: 115px;
     border-radius: 20px;
@@ -194,7 +188,8 @@
     font-weight: 600;
     font-size: 16px;
 }
-.addedBtn{
+
+.addedBtn {
     height: 30px;
     width: 75px;
     border-radius: 20px;
@@ -207,16 +202,19 @@
     font-weight: 600;
     font-size: 16px;
 }
-.dishInteraction > p{
+
+.dishInteraction>p {
     font-family: "Palanquin-Regular";
     font-size: 24px;
 }
-.dishText > h3{
+
+.dishText>h3 {
     font-family: "Palanquin-SemiBold";
     font-size: 24px;
     font-weight: 600;
 }
-.dishText > h4{
+
+.dishText>h4 {
     line-height: 1.2;
     font-family: "Palanquin-Regular";
     font-size: 16px;
@@ -229,22 +227,174 @@
 
 /* Footer: */
 /* ------------------------------------------ */
-.pageFooter{
-    display: flex; 
+.pageFooter {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+
     background-color: #E76C1F;
     height: 128px;
     width: 100%;
     margin-top: 128px;
     gap: 72px;
 }
-footer > a{
+
+footer>a {
     color: white;
     text-decoration: none;
 }
 
+/* ------------------------------------------ */
 
+
+
+/* Basket: */
+/* ------------------------------------------ */
+.basket {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 435px;
+    height: 800px;
+    background-color: #363534;
+    color: #FDEADC;
+
+    position: sticky;
+    top: 0px;
+    margin-top: 64px;
+
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+}
+.basket h2{
+    Color: #FDEADC;
+    font-family: "Palanquin-Bold";
+    font-size: 32px;
+    margin-top: 56px;
+    margin-bottom: 24px;
+}
+
+.addedDish {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: #FDEADC;
+    color: black;
+    border-radius: 20px;
+    width: 340px;
+    min-height: fit-content;
+    padding-left: 16px;
+
+    font-size: 22px;
+    gap: 8px;
+}
+
+.addedDish>p {
+    padding-top: 16px;
+    padding-right: 16px;
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+.rowWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding-right: 16px;
+    padding-bottom: 12px;
+}
+
+.addedDish img {
+    width: 24px;
+    height: 24px;
+}
+
+.addedDish button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: #FDEADC;
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+    border: none;
+}
+
+.addRemoveBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    background-color: #FDEADC;
+    width: 56px;
+}
+
+.addedDishWrapper {
+    display: flex;
+    height: 380px;
+    gap: 16px;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #E7C3AD #363534;
+}
+.priceWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    height: 200px;
+    width: 100%;
+}
+.summaryLine {
+    border: none;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 999px;
+    margin: 12px 0px;
+}
+
+.basketWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+}
+.buyNowBtn{
+    background-color: #E76C1F;
+    height: 64px;
+    width: 320px;
+    border-radius: 60px;
+    color: white; 
+
+    font-family: "Palanquin-Bold";
+    font-size: 32px;
+
+    margin-top: 16px;
+}
+.subtitleRow, .deliveryFeeRow, .totalRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 /* ------------------------------------------ */
