@@ -1,4 +1,6 @@
 function init() {
+    getCategoriesFromLocalStorage();
+    getDishesFromLocalStorage();
     renderDishes();
     renderBasket();
     renderPrices();
@@ -53,6 +55,7 @@ function formatPrice(amount) {
 
 function addToBasket(i) {
     burgerHouseDishes[i].amount++;
+    saveToLocalStorage();
     init();
 }
 
@@ -87,16 +90,19 @@ function getBasketLayout(basketDishesRef) {
 
 function addAmount(i) {
     burgerHouseDishes[i].amount++;
+    saveToLocalStorage();
     init();
 }
 
 function reduceAmount(i) {
     burgerHouseDishes[i].amount--;
+    saveToLocalStorage();
     init();
 }
 
 function deleteFromBasket(i) {
     burgerHouseDishes[i].amount = 0;
+    saveToLocalStorage();
     init();
 }
 
@@ -197,7 +203,8 @@ function clearShoppingCart(){
     for (let i = 0; i < burgerHouseDishes.length; i++){
         burgerHouseDishes[i].amount = 0;
     }
-
+    
+    saveToLocalStorage();
     init();
 }
 
@@ -206,5 +213,6 @@ function getExampleOrder(){
     burgerHouseDishes[4].amount = 1;
     burgerHouseDishes[9].amount = 1;
 
+    saveToLocalStorage();
     init();
 }
