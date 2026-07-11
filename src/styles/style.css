@@ -257,228 +257,6 @@ footer>a {
 
 
 
-/* Basket: */
-/* ------------------------------------------ */
-.basket,
-.emptyBasket {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
-    width: 435px;
-    height: 800px;
-    background-color: #363534;
-    color: #FDEADC;
-
-    position: sticky;
-    top: 0px;
-    margin-top: 64px;
-
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-
-}
-
-.basket h2,
-.emptyBasket h2 {
-    Color: #FDEADC;
-    font-family: "Palanquin-Bold";
-    font-size: 32px;
-    margin-top: 56px;
-    margin-bottom: 24px;
-}
-
-.addedDish {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-    background-color: #FDEADC;
-    color: black;
-    border-radius: 20px;
-    width: 340px;
-    min-height: fit-content;
-    padding-left: 16px;
-
-    font-size: 22px;
-    gap: 8px;
-}
-
-.addedDish>p {
-    padding-top: 16px;
-    padding-right: 16px;
-    line-height: 1.2;
-
-    font-weight: 700;
-}
-
-.firstRowWrapper>p {
-    padding-top: 16px;
-    padding-right: 16px;
-    line-height: 1.2;
-
-    font-weight: 700;
-}
-
-.rowWrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 100%;
-    padding-right: 16px;
-    padding-bottom: 12px;
-}
-
-.addedDish img {
-    width: 24px;
-    height: 24px;
-}
-
-.addedDish button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    background-color: #FDEADC;
-    font-size: 24px;
-    width: 24px;
-    height: 24px;
-    border: none;
-}
-
-.addRemoveBtn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-
-    background-color: #FDEADC;
-    width: 56px;
-}
-
-.addedDishWrapper {
-    display: flex;
-    height: 380px;
-    gap: 16px;
-    flex-direction: column;
-    margin-top: 0;
-    margin-bottom: 0;
-
-    overflow-y: scroll;
-    scrollbar-width: thin;
-    scrollbar-color: #E7C3AD #363534;
-}
-
-.priceWrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-
-    height: 200px;
-    width: 100%;
-}
-
-.summaryLine {
-    border: none;
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 999px;
-    margin: 12px 0px;
-}
-
-.basketWrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 600px;
-}
-
-.buyNowBtn {
-    background-color: #E76C1F;
-    height: 64px;
-    width: 320px;
-    border-radius: 60px;
-    color: white;
-
-    font-family: "Palanquin-Bold";
-    font-size: 32px;
-
-    margin-top: 16px;
-}
-
-.subtitleRow,
-.deliveryFeeRow,
-.totalRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.firstRowWrapper {
-    display: flex;
-}
-
-.firstRowWrapper :last-child {
-    margin-top: 12px;
-    margin-right: 12px;
-}
-
-.emptyBasket {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-
-
-    display: none;
-}
-
-.emptyBasket p {
-    font-size: 24px;
-    text-align: center;
-    margin-top: 8px;
-    line-height: 1.2;
-}
-
-.emptyBasket img {
-    width: 130px;
-    height: 130px;
-    margin-top: 64px;
-}
-
-.exampleOrderBtn {
-    position: absolute;
-    top: 24px;
-    left: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    outline: none;
-}
-.exampleOrderBtn > img{
-    width: 32px;
-    height: 32px;
-    margin-top: -8px;
-}
-
-/* ------------------------------------------ */
-
-
-
 /* Dialog: */
 /* ------------------------------------------ */
 dialog {
@@ -486,32 +264,36 @@ dialog {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+
     border-radius: 30px;
     height: 320px;
     width: 420px;
 
-    color: #FDEADC; 
-    background-color: #363534;    
+    color: #FDEADC;
+    background-color: #363534;
 
-    border: none; 
-    outline: none; 
+    border: none;
+    outline: none;
 }
-dialog h2{
+
+dialog h2 {
     font-family: "Palanquin-Bold";
     font-size: 42px;
     font-weight: 700;
     margin-bottom: -16px;
 }
-dialog h3{
+
+dialog h3 {
     font-family: "Palanquin-Bold";
     font-size: 30px;
     font-weight: 700;
 }
-dialog img{
+
+dialog img {
     width: 80px;
     height: 57px;
 }
+
 .closeBtn {
     position: absolute;
     top: 24px;
@@ -526,23 +308,24 @@ dialog img{
     border: none;
     outline: none;
 }
-.closeBtn > img{
+
+.closeBtn>img {
     width: 16px;
     height: 16px;
 }
 
 dialog[open] {
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-dialog[open] > section {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+dialog[open]>section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /* ------------------------------------------ */
