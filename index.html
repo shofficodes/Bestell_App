@@ -41,18 +41,16 @@
 
         <div class="stickyWrapper innerWidth">
             <section id="dishCategory" class="dishCategory">
-
             </section>
 
-
-            <section class="basket">
+            <section id="basket" class="basket">
                 <header>
                     <h2>Your basket</h2>
                 </header>
 
                 <div class="basketWrapper">
-                    <section id="addedDishes"class="addedDishWrapper">
-                        
+                    <section id="addedDishes" class="addedDishWrapper">
+
                     </section>
 
                     <footer class="priceWrapper">
@@ -69,14 +67,41 @@
                             <p>Total</p>
                             <p id="total">0,00€</p>
                         </div>
-                        <button class="buyNowBtn">Buy Now</button>
+                        <button class="buyNowBtn" onclick="openDialog()">Buy Now</button>
                     </footer>
                 </div>
             </section>
 
+            <section id="emptyBasket" class="emptyBasket">
+                <header>
+                    <h2>Your basket</h2>
+                </header>
+
+                <p>Nothing here yet.<br>
+                    Go ahead and choose something delicious!</p>
+
+                <img src="./assets/icons/buttons/shopping_cart_default.svg" alt="shopping_cart_icon">
+            </section>
         </div>
 
+        <dialog aria-labelledby="dialogTitle" aria-describedby="dialogDescribtion" id="dialogId">
+            <header>
+                <button aria-label="Close button" onclick="closeDialog()"><img src="./assets/icons/buttons/close.svg" alt="close_icon"></button>
+                
+            </header>
+
+            <section>
+                <img src="./assets/icons/order_confirmed_icon.png" alt="order_confirmed_icon">
+                <h2 id="dialogTitle">
+                    Order confirmed!
+                </h2>
+                <h3 id="dialogDescribtion">Your food is on the way!</h3>
+            </section>
+        </dialog>
+
     </main>
+
+
 
     <footer class="pageFooter">
         <a href="#"><img src="./assets/icons/copyright.svg" alt="copyright_icon"> 2025 BurgerHouse</a>

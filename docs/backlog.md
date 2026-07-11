@@ -1,3 +1,5 @@
-- add footer links
+- add order confirmation dialog!
 
-- make basket round over 1440px width!
+- add local Storage
+
+- empty Basket Icon color false!

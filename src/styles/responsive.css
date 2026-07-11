@@ -7,8 +7,10 @@
         padding-left: max(calc(50% - 720px), 0px);
         padding-right: max(calc(50% - 720px), 0px);
     }
+}
 
-    .basket {
+@media screen and (min-width: 1441px) {
+    .basket, .emptyBasket {
         border-top-right-radius: 30px;
         border-bottom-right-radius: 30px;
     }
