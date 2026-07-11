@@ -455,6 +455,26 @@ footer>a {
     margin-top: 64px;
 }
 
+.exampleOrderBtn {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.exampleOrderBtn > img{
+    width: 32px;
+    height: 32px;
+    margin-top: -8px;
+}
+
 /* ------------------------------------------ */
 
 
@@ -492,7 +512,7 @@ dialog img{
     width: 80px;
     height: 57px;
 }
-dialog button {
+.closeBtn {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -506,7 +526,7 @@ dialog button {
     border: none;
     outline: none;
 }
-dialog button > img{
+.closeBtn > img{
     width: 16px;
     height: 16px;
 }

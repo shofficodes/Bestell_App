@@ -170,6 +170,7 @@ function openDialog() {
 function closeDialog() {
     let dialogRef = document.getElementById("dialogId");
     dialogRef.close();
+    clearShoppingCart();
 }
 
 function enableDialogOutsideClickClose(i) {
@@ -190,4 +191,20 @@ function enableDialogOutsideClickClose(i) {
             }
         });
     });
+}
+
+function clearShoppingCart(){
+    for (let i = 0; i < burgerHouseDishes.length; i++){
+        burgerHouseDishes[i].amount = 0;
+    }
+
+    init();
+}
+
+function getExampleOrder(){
+    burgerHouseDishes[0].amount = 2;
+    burgerHouseDishes[4].amount = 1;
+    burgerHouseDishes[9].amount = 1;
+
+    init();
 }
