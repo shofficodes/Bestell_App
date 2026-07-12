@@ -10,8 +10,354 @@
 }
 
 @media screen and (min-width: 1441px) {
-    .basket, .emptyBasket {
+
+    .basket,
+    .emptyBasket {
         border-top-right-radius: 30px;
         border-bottom-right-radius: 30px;
     }
 }
+
+@media screen and (max-width: 1440px) {
+    .bannerBackground {
+        position: absolute;
+        left: 0;
+
+        margin-left: calc((100vw - 100vw) * -1);
+        width: calc(100vw + calc((100vw - 100vw) / 2));
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    .buyNowBtn {
+        width: 180px;
+    }
+
+    .addedDishWrapper {
+        width: 200px;
+    }
+
+    .addedDish {
+        width: 180px;
+    }
+
+    .basket, .emptyBasket{
+        width: 250px;
+    }
+
+    .dish>img {
+        width: 100px;
+        height: 60px;
+    }
+
+    .priceWrapper {
+        width: 180px;
+    }
+
+    .dish {
+        width: 480px;
+        align-items: center;
+    }
+
+    .dishCategory {
+        margin-left: -96px;
+        width: 503px;
+    }
+
+    .dishText h3 {
+        line-height: 1.2;
+    }
+
+    .dishText h4 {
+        line-height: 1;
+    }
+
+    .dishText {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bannerBackground {
+        margin-left: 96px;
+    }
+
+    .catTitle {
+        width: 450px;
+        line-height: 1;
+        white-space: nowrap;
+        margin-left: 220px;
+    }
+
+    .catIcon{
+        margin-left: -32px;
+    }
+}
+
+@media screen and (min-width: 851px) and (max-width: 920px) {
+    .buyNowBtn {
+        width: 230px;
+    }
+
+    .addedDishWrapper {
+        width: 250px;
+    }
+
+    .addedDish {
+        width: 230px;
+    }
+
+    .basket, .emptyBasket{
+        width: 300px;
+    }
+
+    .dish>img {
+        width: 100px;
+        height: 60px;
+    }
+
+    .priceWrapper {
+        width: 230px;
+    }
+
+    .dish {
+        width: 480px;
+        align-items: center;
+    }
+
+    .dishCategory {
+        margin-left: -96px;
+        width: 503px;
+    }
+
+    .dishText h3 {
+        line-height: 1.2;
+    }
+
+    .dishText h4 {
+        line-height: 1;
+    }
+
+    .dishText {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bannerBackground {
+        margin-left: 96px;
+    }
+
+    .catTitle {
+        width: 450px;
+        line-height: 1;
+        white-space: nowrap;
+        margin-left: 220px;
+    }
+
+    .catIcon{
+        margin-left: -32px;
+    }
+}
+
+@media screen and (min-width: 921px) and (max-width: 1050px) {
+    .buyNowBtn {
+        width: 230px;
+    }
+
+    .addedDishWrapper {
+        width: 250px;
+    }
+
+    .addedDish {
+        width: 230px;
+    }
+
+    .basket, .emptyBasket{
+        width: 300px;
+    }
+
+    .dish>img {
+        width: 120px;
+        height: 72px;
+    }
+
+    .priceWrapper {
+        width: 230px;
+    }
+
+    .dish {
+        width: 580px;
+        align-items: center;
+    }
+
+    .dishCategory {
+        margin-left: -96px;
+        width: 680px;
+    }
+
+    .dishText h3 {
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+
+    .dishText h4 {
+        line-height: 1.2;
+    }
+
+    .dishText {
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bannerBackground {
+        margin-left: 96px;
+    }
+
+    .catTitle {
+        width: 450px;
+        line-height: 1;
+        white-space: nowrap;
+        margin-left: 220px;
+    }
+
+    .catIcon{
+        margin-left: -32px;
+    }
+}
+
+@media screen and (min-width: 1051px) and (max-width: 1150px) {
+    .buyNowBtn {
+        width: 350px;
+    }
+
+    .addedDishWrapper {
+        width: 350px;
+    }
+
+    .addedDish {
+        width: 350px;
+    }
+
+    .basket, .emptyBasket{
+        width: 400px;
+    }
+
+    .dish>img {
+        width: 120px;
+        height: 72px;
+    }
+
+    .priceWrapper {
+        width: 350px;
+    }
+
+    .dish {
+        width: 580px;
+        align-items: center;
+    }
+
+    .dishCategory {
+        margin-left: -96px;
+        width: 680px;
+    }
+
+    .dishText h3 {
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+
+    .dishText h4 {
+        line-height: 1.2;
+    }
+
+    .dishText {
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bannerBackground {
+        margin-left: 96px;
+    }
+
+    .catTitle {
+        width: 450px;
+        line-height: 1;
+        white-space: nowrap;
+        margin-left: 220px;
+    }
+
+    .catIcon{
+        margin-left: -32px;
+    }
+}
+@media screen and (min-width: 1151px) and (max-width: 1279px) {
+    .buyNowBtn {
+        width: 350px;
+    }
+
+    .addedDishWrapper {
+        width: 350px;
+    }
+
+    .addedDish {
+        width: 350px;
+    }
+
+    .basket, .emptyBasket{
+        width: 400px;
+    }
+
+    .dish>img {
+        width: 200px;
+        height: 120px;
+    }
+
+    .priceWrapper {
+        width: 350px;
+    }
+
+    .dish {
+        width: 720px;
+        align-items: center;
+    }
+
+    .dishCategory {
+        margin-left: -96px;
+        width: 820px;
+    }
+
+    .dishText h3 {
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+
+    .dishText h4 {
+        line-height: 1.2;
+    }
+
+    .dishText {
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bannerBackground {
+        margin-left: 96px;
+    }
+
+    .catTitle {
+        width: 450px;
+        line-height: 1;
+        white-space: nowrap;
+        margin-left: 220px;
+    }
+
+    .catIcon{
+        margin-left: -32px;
+    }
+}
+
+

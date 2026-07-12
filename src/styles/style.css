@@ -136,7 +136,7 @@
 /* Dish: */
 /* ------------------------------------------ */
 .dishes {
-    width: calc(100% -435px);
+    width: calc(100% - 435px);
     margin-top: 32px;
     margin-left: 120px;
 }
