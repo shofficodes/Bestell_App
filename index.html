@@ -16,8 +16,8 @@
 
     <script src="./src/scripts/script.js"></script>
     <script src="./src/scripts/basket.js"></script>
-    <script src="./src/scripts/templates.js"></script>
     <script src="./src/scripts/db.js"></script>
+    <script src="./src/scripts/templates.js"></script>
     <script src="./src/scripts/local_storage.js"></script>
 </head>
 
@@ -37,7 +37,12 @@
             </div>
             <img class="restaurantLogo" src="./assets/icons/burger_house_logo.png" alt="burger_house_logo_img">
             <div class="restaurantTitle">
-                <h1><span class="titleHighlight">Burger</span> House</h1>
+                <div class="titleWrapper">
+                    <h1><span class="titleHighlight">Burger</span> House</h1>
+                    <div class="reviews">
+                        <img src="./assets/icons/review_star.png" alt="review_star_icon"><span class="reviewRating"> 4,1</span><span class="reviewAmount"> (317)</span>
+                    </div>
+                </div>
                 <h2>The best of Burgers, Pizza, and Greens, all in one great place.</h2>
             </div>
         </header>
@@ -110,6 +115,17 @@
         <a href="#"><img src="./assets/icons/copyright.svg" alt="copyright_icon"> 2025 BurgerHouse</a>
         <a href="./src/legal/imprint.html" target="_blank">Imprint</a>
         <a href="./src/legal/cookies.html" target="_blank">Cookie Preferences</a>
+    </footer>
+    <footer class="mobilePageFooter">
+        <a href="./src/legal/imprint.html" target="_blank">Imprint</a>
+        <a href="./src/legal/cookies.html" target="_blank">Cookie Preferences</a>
+        <a class="companyFooter" href="#"><img src="./assets/icons/copyright.svg" alt="copyright_icon"> 2025 BurgerHouse</a>
+    </footer>
+    <footer class="mobileBottomNav">
+        <button><img src="./assets/icons/buttons/home_btn_default.svg" alt=""></button>
+        <button><img src="./assets/icons/buttons/profile_default.svg" alt=""></button>
+        <button><img src="./assets/icons/buttons/takeout_dining_2.svg" alt=""></button>
+        <button><img src="./assets/icons/buttons/shopping_cart_default.svg" alt=""></button>
     </footer>
 </body>
 

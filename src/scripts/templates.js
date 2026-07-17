@@ -5,6 +5,7 @@ function categoryTemplate(catIndex){
                     <img class="catIcon" src="${burgerHouseCategories[catIndex].icon_path}" alt="${burgerHouseCategories[catIndex].icon_alt}">
                     <div class="catTitleWrapper">
                         <h2 class="catTitle">${burgerHouseCategories[catIndex].title} ${checkSubtitle(catIndex)}</h2>
+                        <h2 class="catMobileTitle">${burgerHouseCategories[catIndex].mobileTitle} ${checkSubtitle(catIndex)}</h2>
                     </div>
                 </header>
                 <div class="bannerBackground"></div>

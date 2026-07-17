@@ -210,10 +210,19 @@
     border: none;
     outline: none;
 }
-.exampleOrderBtn > img{
+
+.exampleOrderBtn>img {
     width: 32px;
     height: 32px;
     margin-top: -8px;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex-visible {
+    display: flex;
 }
 
 /* ------------------------------------------ */

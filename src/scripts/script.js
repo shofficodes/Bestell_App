@@ -1,5 +1,4 @@
 function init() {
-    getCategoriesFromLocalStorage();
     getDishesFromLocalStorage();
     renderDishes();
     renderBasket();

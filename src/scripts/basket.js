@@ -20,16 +20,21 @@ function renderBasket() {
 }
 
 function getBasketLayout(basketDishesRef) {
-    basketRef = document.getElementById("basket");
-    emptyBasketRef = document.getElementById("emptyBasket");
+    const basketRef = document.getElementById("basket");
+    const emptyBasketRef = document.getElementById("emptyBasket");
 
     if (basketDishesRef == "") {
-        basketRef.style.display = "none";
-        emptyBasketRef.style.display = "flex";
-    }
-    else {
-        basketRef.style.display = "flex";
-        emptyBasketRef.style.display = "none";
+        basketRef.classList.add("hidden");
+        basketRef.classList.remove("flex-visible");
+
+        emptyBasketRef.classList.remove("hidden");
+        emptyBasketRef.classList.add("flex-visible");
+    } else {
+        basketRef.classList.remove("hidden");
+        basketRef.classList.add("flex-visible");
+
+        emptyBasketRef.classList.add("hidden");
+        emptyBasketRef.classList.remove("flex-visible");
     }
 }
 

@@ -23,7 +23,7 @@
         position: absolute;
         left: 0;
 
-        margin-left: calc((100vw - 100vw) * -1);
+        margin-left: 0;
         width: calc(100vw + calc((100vw - 100vw) / 2));
     }
 }
@@ -41,7 +41,8 @@
         width: 180px;
     }
 
-    .basket, .emptyBasket{
+    .basket,
+    .emptyBasket {
         width: 250px;
     }
 
@@ -89,7 +90,7 @@
         margin-left: 220px;
     }
 
-    .catIcon{
+    .catIcon {
         margin-left: -32px;
     }
 }
@@ -107,7 +108,8 @@
         width: 230px;
     }
 
-    .basket, .emptyBasket{
+    .basket,
+    .emptyBasket {
         width: 300px;
     }
 
@@ -155,7 +157,7 @@
         margin-left: 220px;
     }
 
-    .catIcon{
+    .catIcon {
         margin-left: -32px;
     }
 }
@@ -173,7 +175,8 @@
         width: 230px;
     }
 
-    .basket, .emptyBasket{
+    .basket,
+    .emptyBasket {
         width: 300px;
     }
 
@@ -222,7 +225,7 @@
         margin-left: 220px;
     }
 
-    .catIcon{
+    .catIcon {
         margin-left: -32px;
     }
 }
@@ -240,7 +243,8 @@
         width: 350px;
     }
 
-    .basket, .emptyBasket{
+    .basket,
+    .emptyBasket {
         width: 400px;
     }
 
@@ -289,10 +293,11 @@
         margin-left: 220px;
     }
 
-    .catIcon{
+    .catIcon {
         margin-left: -32px;
     }
 }
+
 @media screen and (min-width: 1151px) and (max-width: 1279px) {
     .buyNowBtn {
         width: 350px;
@@ -306,7 +311,8 @@
         width: 350px;
     }
 
-    .basket, .emptyBasket{
+    .basket,
+    .emptyBasket {
         width: 400px;
     }
 
@@ -355,9 +361,148 @@
         margin-left: 220px;
     }
 
-    .catIcon{
+    .catIcon {
         margin-left: -32px;
     }
 }
 
+@media screen and (max-width: 768px) {
 
+    .basket,
+    .emptyBasket {
+        display: none;
+    }
+
+    .headerBurgerMenu {
+        display: none;
+    }
+
+    .headerLogo {
+        margin-left: 16px;
+    }
+
+    nav {
+        min-height: 80px;
+        height: 80px;
+    }
+
+    .hero {
+        padding: 16px;
+        border-radius: 32px;
+    }
+
+    .restaurantLogo {
+        width: 170px;
+        height: 170px;
+    }
+
+    .titleWrapper {
+        flex-direction: column-reverse;
+        gap: 0px;
+        margin-top: 48px;
+    }
+
+    .restaurantTitle h2 {
+        margin: 0px 32px;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .catTitle {
+        display: none;
+    }
+
+    .catMobileTitle {
+        display: flex;
+
+        margin-left: 0;
+        font-size: 32px;
+    }
+
+    .bannerBackground {
+        margin-left: 96px;
+    }
+
+    .dishes {
+        width: 90%;
+        margin-left: 0px;
+        margin-top: 64px;
+    }
+
+    .dish {
+        width: 100%;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dishCategory {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bannerBackground {
+        display: none;
+    }
+
+    .bannerWrapper {
+        width: 100%;
+    }
+
+    .catBanner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catIcon {
+        left: unset;
+        bottom: -20px;
+
+        width: 60px;
+        height: 60px;
+
+    }
+
+    .catTitleWrapper {
+        justify-content: center;
+    }
+
+    .dishTextWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dishText {
+        width: 95%;
+        line-height: 1.2;
+    }
+
+    .dishInteraction {
+        flex-direction: row;
+        width: 95%;
+    }
+
+    .dish img{
+        width: 100%;
+        padding: 8px;
+        object-fit: cover;
+        height: 150px;
+        border-radius: 20px;
+    }
+
+    .pageFooter{
+        display: none;
+    }
+
+    .mobilePageFooter{
+        display: flex; 
+        flex-direction: column;
+        gap: 8px;
+        line-height: 1.2;
+        margin-bottom: 78px;
+    }
+}

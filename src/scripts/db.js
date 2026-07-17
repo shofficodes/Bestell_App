@@ -1,18 +1,21 @@
 let burgerHouseCategories = [
     {   "tag" : "burger_and_sandwiches", 
         "title" : "Burger & Sandwiches",
+        "mobileTitle" : "Burger",
         "subtitle" : "",
         "icon_path" : "./assets/icons/Cat_Burger.png",
         "icon_alt" : "burger_category_icon"
     },
     {   "tag" : "pizza",
         "title" : "Pizza",
+        "mobileTitle" : "Pizza",
         "subtitle" : "(30cm)",
         "icon_path" : "./assets/icons/Cat_Pizza.png",
         "icon_alt" : "pizza_category_icon"
     },
     {   "tag" : "salad",
         "title" : "Salad",
+        "mobileTitle" : "Salad",
         "subtitle" : "",
         "icon_path" : "./assets/icons/Cat_Salad.png",
         "icon_alt" : "salad_category_icon"
