@@ -486,7 +486,7 @@
         width: 95%;
     }
 
-    .dish img{
+    .dish img {
         width: 100%;
         padding: 8px;
         object-fit: cover;
@@ -494,15 +494,37 @@
         border-radius: 20px;
     }
 
-    .pageFooter{
+    .pageFooter {
         display: none;
     }
 
-    .mobilePageFooter{
-        display: flex; 
+    .mobilePageFooter {
+        display: flex;
         flex-direction: column;
         gap: 8px;
         line-height: 1.2;
         margin-bottom: 78px;
     }
+
+    .basket,
+    .emptyBasket {
+        display: none;
+        position: fixed;
+        margin-top: 0;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 0;
+        height: calc(100dvh - 78px);
+
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.flex-visible {
+    display: flex;
 }

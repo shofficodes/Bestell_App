@@ -5,6 +5,7 @@ function init() {
     renderPrices();
     changeIcon();
     enableDialogOutsideClickClose();
+    enableBasketOutsideClickClose();
 }
 
 function renderDishes() {

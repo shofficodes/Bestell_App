@@ -40,7 +40,8 @@
                 <div class="titleWrapper">
                     <h1><span class="titleHighlight">Burger</span> House</h1>
                     <div class="reviews">
-                        <img src="./assets/icons/review_star.png" alt="review_star_icon"><span class="reviewRating"> 4,1</span><span class="reviewAmount"> (317)</span>
+                        <img src="./assets/icons/review_star.png" alt="review_star_icon"><span class="reviewRating">
+                            4,1</span><span class="reviewAmount"> (317)</span>
                     </div>
                 </div>
                 <h2>The best of Burgers, Pizza, and Greens, all in one great place.</h2>
@@ -75,13 +76,14 @@
                             <p>Total</p>
                             <p id="total">0,00€</p>
                         </div>
-                        <button class="buyNowBtn" onclick="openDialog()">Buy Now</button>
+                        <button class="buyNowBtn" onclick="buyNow()">Buy Now</button>
                     </footer>
                 </div>
             </section>
 
             <section id="emptyBasket" class="emptyBasket">
-                <button class="exampleOrderBtn" aria-label="Get example order" onclick="getExampleOrder()"><img src="./assets/icons/buttons/get_example_order.png" alt="get_example_order_icon"></button>
+                <button class="exampleOrderBtn" aria-label="Get example order" onclick="getExampleOrder()"><img
+                        src="./assets/icons/buttons/get_example_order.png" alt="get_example_order_icon"></button>
                 <header>
                     <h2>Your basket</h2>
                 </header>
@@ -95,7 +97,8 @@
 
         <dialog aria-labelledby="dialogTitle" aria-describedby="dialogDescribtion" id="dialogId">
             <header>
-                <button class="closeBtn" aria-label="Close button" onclick="closeDialog()"><img src="./assets/icons/buttons/close.svg" alt="close_icon"></button>
+                <button class="closeBtn" aria-label="Close button" onclick="closeDialog(`dialogId`)"><img
+                        src="./assets/icons/buttons/close.svg" alt="close_icon"></button>
             </header>
 
             <section>
@@ -119,13 +122,14 @@
     <footer class="mobilePageFooter">
         <a href="./src/legal/imprint.html" target="_blank">Imprint</a>
         <a href="./src/legal/cookies.html" target="_blank">Cookie Preferences</a>
-        <a class="companyFooter" href="#"><img src="./assets/icons/copyright.svg" alt="copyright_icon"> 2025 BurgerHouse</a>
+        <a class="companyFooter" href="#"><img src="./assets/icons/copyright.svg" alt="copyright_icon"> 2025
+            BurgerHouse</a>
     </footer>
     <footer class="mobileBottomNav">
-        <button><img src="./assets/icons/buttons/home_btn_default.svg" alt=""></button>
-        <button><img src="./assets/icons/buttons/profile_default.svg" alt=""></button>
-        <button><img src="./assets/icons/buttons/takeout_dining_2.svg" alt=""></button>
-        <button><img src="./assets/icons/buttons/shopping_cart_default.svg" alt=""></button>
+        <button href="#"><img src="./assets/icons/buttons/home_btn_default.svg" alt=""></button>
+        <button onclick="openProfile()"><img src="./assets/icons/buttons/profile_default.svg" alt=""></button>
+        <button onclick="openOrders()"><img src="./assets/icons/buttons/takeout_dining_2.svg" alt=""></button>
+        <button id="basketButton" onclick="openBasket()"><img src="./assets/icons/buttons/shopping_cart_default.svg" alt=""></button>
     </footer>
 </body>
 

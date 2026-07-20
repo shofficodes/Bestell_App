@@ -1,12 +1,19 @@
 function addToBasket(i) {
     burgerHouseDishes[i].amount++;
     saveToLocalStorage();
-    init();
+    if (window.matchMedia("(min-width: 769px)").matches) {
+        init();
+    }
+    else {
+        getDishesFromLocalStorage();
+        renderDishes();
+    }
 }
 
 function renderBasket() {
     basketDishesRef = document.getElementById("addedDishes");
     basketDishesRef.innerHTML = "";
+
     for (let i = 0; i < burgerHouseDishes.length; i++) {
         if (burgerHouseDishes[i].amount > 0 && burgerHouseDishes[i].amount < 2) {
             basketDishesRef.innerHTML += basketTemplate(i);
@@ -20,8 +27,8 @@ function renderBasket() {
 }
 
 function getBasketLayout(basketDishesRef) {
-    const basketRef = document.getElementById("basket");
-    const emptyBasketRef = document.getElementById("emptyBasket");
+    let basketRef = document.getElementById("basket");
+    let emptyBasketRef = document.getElementById("emptyBasket");
 
     if (basketDishesRef == "") {
         basketRef.classList.add("hidden");
@@ -36,6 +43,7 @@ function getBasketLayout(basketDishesRef) {
         emptyBasketRef.classList.add("hidden");
         emptyBasketRef.classList.remove("flex-visible");
     }
+
 }
 
 function addAmount(i) {
@@ -118,13 +126,13 @@ function changeIcon() {
     }
 }
 
-function openDialog() {
-    let dialogRef = document.getElementById("dialogId");
+function openDialog(id) {
+    let dialogRef = document.getElementById(id);
     dialogRef.showModal();
 }
 
-function closeDialog() {
-    let dialogRef = document.getElementById("dialogId");
+function closeDialog(id) {
+    let dialogRef = document.getElementById(id);
     dialogRef.close();
     clearShoppingCart();
 }
@@ -155,7 +163,13 @@ function clearShoppingCart() {
     }
 
     saveToLocalStorage();
-    init();
+    if (window.matchMedia("(min-width: 769px)").matches) {
+        init();
+    }
+    else {
+        getDishesFromLocalStorage();
+        renderDishes();
+    }
 }
 
 function getExampleOrder() {
@@ -165,4 +179,49 @@ function getExampleOrder() {
 
     saveToLocalStorage();
     init();
+}
+
+function openBasket() {
+    init();
+}
+
+function hideBasket() {
+
+    let basketRef = document.getElementById("basket");
+    let emptyBasketRef = document.getElementById("emptyBasket");
+
+    basketRef.classList.add("hidden");
+    basketRef.classList.remove("flex-visible");
+
+    emptyBasketRef.classList.add("hidden");
+    emptyBasketRef.classList.remove("flex-visible");
+}
+
+function buyNow() {
+    openDialog("dialogId");
+
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        hideBasket();
+    }
+}
+
+function handleBasketOutsideClick(event) {
+    const basket = document.getElementById("basket");
+    const emptyBasket = document.getElementById("emptyBasket");
+    const openButton = document.getElementById("basketButton");
+
+    if (!basket || !emptyBasket) return;
+
+    const clickedInsideBasket = basket.contains(event.target);
+    const clickedInsideEmptyBasket = emptyBasket.contains(event.target);
+    const clickedOpenButton = openButton && openButton.contains(event.target);
+
+    if (!clickedInsideBasket && !clickedInsideEmptyBasket && !clickedOpenButton) {
+        hideBasket();
+        document.removeEventListener("click", handleBasketOutsideClick);
+    }
+}
+
+function enableBasketOutsideClickClose() {
+    document.addEventListener("click", handleBasketOutsideClick);
 }
