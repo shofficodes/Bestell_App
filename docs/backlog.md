@@ -1,1 +1,3 @@
-- deleteButton schließt den Basket! 
+- add profile and orders dialog!
+
+- refactor anything
