@@ -43,25 +43,36 @@ function getBasketLayout(basketDishesRef) {
         emptyBasketRef.classList.add("hidden");
         emptyBasketRef.classList.remove("flex-visible");
     }
+}
 
+function checkForReload() {
+    const navEntry = performance.getEntriesByType("navigation")[0];
+    const isReload = navEntry && navEntry.type === "reload";
+
+    const naviEntry = performance.getEntriesByType("navigation")[0];
+    const isFirstLoad = naviEntry && naviEntry.type === "navigate";
+
+    if (isReload || isFirstLoad) {
+        hideBasket();
+    }
 }
 
 function addAmount(i) {
     burgerHouseDishes[i].amount++;
     saveToLocalStorage();
-    init();
+    mobileInit();
 }
 
 function reduceAmount(i) {
     burgerHouseDishes[i].amount--;
     saveToLocalStorage();
-    init();
+    mobileInit();
 }
 
 function deleteFromBasket(i) {
     burgerHouseDishes[i].amount = 0;
     saveToLocalStorage();
-    init();
+    mobileInit();
 }
 
 function renderPrices() {
@@ -178,11 +189,12 @@ function getExampleOrder() {
     burgerHouseDishes[9].amount = 1;
 
     saveToLocalStorage();
-    init();
+    mobileInit();
 }
 
 function openBasket() {
-    init();
+    getDishesFromLocalStorage();
+    mobileInit();
 }
 
 function hideBasket() {
@@ -205,18 +217,28 @@ function buyNow() {
     }
 }
 
+function isBasketInnerButton(event) {
+    return !!(
+        event.target.closest(".addButton") ||
+        event.target.closest(".reduceButton") ||
+        event.target.closest(".deleteBtn")
+    );
+}
+
 function handleBasketOutsideClick(event) {
     const basket = document.getElementById("basket");
     const emptyBasket = document.getElementById("emptyBasket");
-    const openButton = document.getElementById("basketButton");
+    const openBasket = document.getElementById("basketButton");
 
     if (!basket || !emptyBasket) return;
 
     const clickedInsideBasket = basket.contains(event.target);
     const clickedInsideEmptyBasket = emptyBasket.contains(event.target);
-    const clickedOpenButton = openButton && openButton.contains(event.target);
+    const clickedBasketButton = openBasket.contains(event.target);
 
-    if (!clickedInsideBasket && !clickedInsideEmptyBasket && !clickedOpenButton) {
+    if (clickedBasketButton) return;
+
+    if (!clickedInsideBasket && !clickedInsideEmptyBasket && !isBasketInnerButton(event)) {
         hideBasket();
         document.removeEventListener("click", handleBasketOutsideClick);
     }

@@ -2,6 +2,17 @@ function init() {
     getDishesFromLocalStorage();
     renderDishes();
     renderBasket();
+    checkForReload();
+    renderPrices();
+    changeIcon();
+    enableDialogOutsideClickClose();
+    enableBasketOutsideClickClose();
+}
+
+function mobileInit(){
+    getDishesFromLocalStorage();
+    renderDishes();
+    renderBasket();
     renderPrices();
     changeIcon();
     enableDialogOutsideClickClose();

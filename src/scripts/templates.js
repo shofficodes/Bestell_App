@@ -44,7 +44,7 @@ function basketTemplate(i){
                 <div class="addRemoveBtn">
                     <button class="deleteBtn" onclick="reduceAmount(${i})"><img id="deleteIconImg" src="./assets/icons/buttons/delete.svg" alt="delete_icon"></button>
                      ${burgerHouseDishes[i].amount} 
-                    <button onclick="addAmount(${i})">+</button>
+                    <button class="addButton" onclick="addAmount(${i})">+</button>
                 </div>
                 <p>${formatPrice(burgerHouseDishes[i].price)}</p>
             </div>
@@ -61,9 +61,9 @@ function secondBasketTemplate(i){
             </div>
             <div class="rowWrapper">
                 <div class="addRemoveBtn">
-                    <button onclick="reduceAmount(${i})">-</button>
+                    <button class="reduceButton" onclick="reduceAmount(${i})">-</button>
                      ${burgerHouseDishes[i].amount} 
-                    <button onclick="addAmount(${i})">+</button>
+                    <button class="addButton" onclick="addAmount(${i})">+</button>
                 </div>
                 <p>${formatPrice(burgerHouseDishes[i].price)}</p>
             </div>
