@@ -582,6 +582,12 @@
 
 }
 
+@media screen and (min-width: 769px){
+    .mobileBottomNav{
+        display: none;
+    }
+}
+
 .hidden {
     display: none;
 }

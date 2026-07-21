@@ -53,7 +53,9 @@ function checkForReload() {
     const isFirstLoad = naviEntry && naviEntry.type === "navigate";
 
     if (isReload || isFirstLoad) {
-        hideBasket();
+        if(isMobileView()){
+            hideBasket();
+        }
     }
 }
 
@@ -212,7 +214,7 @@ function hideBasket() {
 function buyNow() {
     openDialog("dialogId");
 
-    if (window.matchMedia("(max-width: 768px)").matches) {
+    if (isMobileView()) {
         hideBasket();
     }
 }
@@ -239,11 +241,46 @@ function handleBasketOutsideClick(event) {
     if (clickedBasketButton) return;
 
     if (!clickedInsideBasket && !clickedInsideEmptyBasket && !isBasketInnerButton(event)) {
-        hideBasket();
-        document.removeEventListener("click", handleBasketOutsideClick);
+        if(isMobileView()){
+            hideBasket();
+            document.removeEventListener("click", handleBasketOutsideClick);
+        }
     }
 }
 
 function enableBasketOutsideClickClose() {
     document.addEventListener("click", handleBasketOutsideClick);
+}
+
+function showBasket(){
+    let basketRef = document.getElementById("basket");
+    let emptyBasketRef = document.getElementById("emptyBasket");
+
+    if (basketRef.classList.contains("hidden") && emptyBasketRef.classList.contains("hidden")) {
+        for(let i = 0; i < burgerHouseDishes.length; i++){
+            if (burgerHouseDishes[i].amount > 0){
+                basketRef.classList.remove("hidden");
+                basketRef.classList.add("flex-visible");
+                init();
+                return;
+            }
+        }
+        emptyBasketRef.classList.remove("hidden");
+        emptyBasketRef.classList.add("flex-visible");
+        init();
+    }
+}
+
+function isMobileView() {
+    return window.innerWidth <= 768;
+}
+
+function setupSwitchToMobileListener() {
+    const mobileQuery = window.matchMedia("(max-width: 768px)");
+
+    mobileQuery.addEventListener("change", function (event) {
+        if (event.matches) {
+            hideBasket();
+        }
+    });
 }

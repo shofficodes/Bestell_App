@@ -7,6 +7,7 @@ function init() {
     changeIcon();
     enableDialogOutsideClickClose();
     enableBasketOutsideClickClose();
+    setupSwitchToMobileListener();
 }
 
 function mobileInit(){
@@ -64,3 +65,8 @@ function formatPrice(amount) {
     }).format(amount);
 }
 
+window.addEventListener("resize", function () {
+    if (window.innerWidth > 768) {
+        showBasket();
+    }
+});
