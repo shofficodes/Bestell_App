@@ -1,4 +1,4 @@
-function saveToLocalStorage(){
+function saveToLocalStorage() {
     localStorage.setItem("burgerHouseCategories", JSON.stringify(burgerHouseCategories));
     localStorage.setItem("burgerHouseDishes", JSON.stringify(burgerHouseDishes));
 }
@@ -17,7 +17,7 @@ function getCategoriesFromLocalStorage(pushError = false) {
             burgerHouseCategories = myArr;
         }
     } catch (error) {
-        if (pushError){
+        if (pushError) {
             console.log("Kein gültiger localStorage gefunden:", error);
         }
     }
@@ -37,7 +37,7 @@ function getDishesFromLocalStorage(pushError = false) {
             burgerHouseDishes = myArr;
         }
     } catch (error) {
-        if (pushError){
+        if (pushError) {
             console.log("Kein gültiger localStorage gefunden:", error);
         }
     }

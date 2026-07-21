@@ -1,5 +1,3 @@
-/* Header */
-/* --------------------------------------------------- */
 .headerBurgerMenu{
     height: 60px;
     width: 60px;
@@ -28,4 +26,3 @@ nav > button{
     align-items: center;
     justify-content: center;
 }
-/* --------------------------------------------------- */

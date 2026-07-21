@@ -1,3 +1,3 @@
 - add profile and orders dialog!
 
-- refactor anything
+- add readme.md

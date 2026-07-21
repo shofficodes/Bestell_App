@@ -109,7 +109,8 @@
     left: 167px;
 }
 
-.catTitle, .catMobileTitle {
+.catTitle,
+.catMobileTitle {
     font-family: "Palanquin-Bold";
     font-size: 40px;
     font-weight: 700;
@@ -144,7 +145,7 @@
     width: calc(100vw + calc((100vw - 1440px) / 2));
 }
 
-.catMobileTitle{
+.catMobileTitle {
     display: none;
 }
 
@@ -269,7 +270,8 @@
 
 /* Footer: */
 /* ------------------------------------------ */
-.pageFooter, .mobilePageFooter {
+.pageFooter,
+.mobilePageFooter {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -287,16 +289,17 @@ footer>a {
     text-decoration: none;
 }
 
-.mobilePageFooter{
+.mobilePageFooter {
     display: none;
 }
 
-.companyFooter{
+.companyFooter {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 6px;
 }
+
 /* ------------------------------------------ */
 
 
@@ -315,18 +318,21 @@ footer>a {
     background-color: #363534;
 }
 
-.mobileBottomNav img, .mobileBottomNav button{
+.mobileBottomNav img,
+.mobileBottomNav button {
     background-color: #363534;
     border: none;
 }
 
-.mobileBottomNav img{
+.mobileBottomNav img {
     width: 30px;
     height: 30px;
 }
 
 
 /* ------------------------------------------ */
+
+
 
 /* Dialog: */
 /* ------------------------------------------ */
